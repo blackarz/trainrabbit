@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bgmain"
+    tools:context=".NutritionPlans">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/BackBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/backbtn"
+            android:layout_margin="5dp"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/nutritionbtn"
+
+            />
+
+        <ImageView
+            android:id="@+id/MenuBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/menubtn"
+            android:layout_margin="5dp"
+            />
+
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+
+            <ImageView
+                android:id="@+id/BegennerBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/muscle"
+                android:layout_margin="5dp"
+                />
+
+            <ImageView
+                android:id="@+id/TextWorkout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/textmuscle"
+                android:layout_margin="5dp"
+                android:visibility="gone"
+                />
+
+
+
+            <ImageView
+                android:id="@+id/IntermediateBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/fatloss2"
+                android:layout_margin="5dp"
+                />
+
+            <ImageView
+                android:id="@+id/TextIntermediate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:src="@drawable/textfatloss2"
+                android:layout_margin="5dp"
+                />
+
+
+
+            <ImageView
+                android:id="@+id/AdvancedBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/blanced"
+                android:layout_margin="5dp"
+                />
+
+            <ImageView
+                android:id="@+id/TextAdvanced"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:src="@drawable/textblanced"
+                android:layout_margin="5dp"
+                />
+
+            <ImageView
+                android:id="@+id/FatlossBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/lowcarb"
+                android:layout_margin="5dp"
+                />
+
+            <ImageView
+                android:id="@+id/TextFatloss"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:src="@drawable/textlowcab"
+                android:layout_margin="5dp"
+                />
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>
