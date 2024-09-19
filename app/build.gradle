@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'com.luvabet.tigrepg.tigrepg'
+    namespace 'com.fitness.train.train'
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.luvabet.tigrepg.tigrepg"
+        applicationId "com.fitness.train.train"
         minSdk 24
         targetSdk 34
         versionCode 1
@@ -33,7 +33,7 @@ android {
             shrinkResources true
             proguardFiles(
                     getDefaultProguardFile("proguard-android-optimize.txt"),
-                    "proguard-rules.pro"
+                    "proguard-rules.rabbit"
             )
             signingConfig = signingConfigs.getByName("release")
 

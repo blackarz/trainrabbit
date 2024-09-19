@@ -1,4 +1,4 @@
-package com.luvabet.tigrepg;
+package com.fitness.train;
 
 import org.junit.Test;
 

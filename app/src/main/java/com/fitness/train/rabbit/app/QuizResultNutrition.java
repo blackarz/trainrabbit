@@ -1,4 +1,4 @@
-package com.luvabet.tigrepg.pro;
+package com.fitness.train.rabbit.app;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,9 +8,10 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.luvabet.tigrepg.tigrepg.R;
+import com.fitness.train.train.R;
 
-public class QuizResult extends AppCompatActivity {
+
+public class QuizResultNutrition extends AppCompatActivity {
 
     ImageView MenuBtn,BackBtn;
 
@@ -21,7 +22,7 @@ public class QuizResult extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_quiz_result);
+        setContentView(R.layout.activity_quiz_resultnutrition);
 
         BackBtn = findViewById(R.id.BackBtn);
         MenuBtn = findViewById(R.id.MenuBtn);
@@ -35,7 +36,7 @@ public class QuizResult extends AppCompatActivity {
         MenuBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(QuizResult.this, MainActivity.class);
+                Intent intent = new Intent(QuizResultNutrition.this, MainActivity.class);
                 startActivity(intent);
             }
         });
@@ -56,14 +57,14 @@ public class QuizResult extends AppCompatActivity {
 
         // Retry button to start the quiz again
         btnRetry.setOnClickListener(v -> {
-            Intent intent = new Intent(QuizResult.this, WorkoutQuiz.class);
+            Intent intent = new Intent(QuizResultNutrition.this, NutritionQuiz.class);
             startActivity(intent);
             finish();
         });
 
         // Menu button to go back to the main menu
         btnMenu.setOnClickListener(v -> {
-            Intent intent = new Intent(QuizResult.this, MainActivity.class);
+            Intent intent = new Intent(QuizResultNutrition.this, MainActivity.class);
             startActivity(intent);
             finish();
         });

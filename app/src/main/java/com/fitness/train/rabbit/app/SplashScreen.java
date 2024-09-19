@@ -1,4 +1,4 @@
-package com.luvabet.tigrepg.pro;
+package com.fitness.train.rabbit.app;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -8,7 +8,8 @@ import android.view.WindowManager;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.luvabet.tigrepg.tigrepg.R;
+import com.fitness.train.train.R;
+
 
 @SuppressLint("CustomSplashScreen")
 public class SplashScreen extends AppCompatActivity {

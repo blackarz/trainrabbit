@@ -1,4 +1,4 @@
-package com.luvabet.tigrepg.pro;
+package com.fitness.train.rabbit.app;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,7 +7,8 @@ import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.luvabet.tigrepg.tigrepg.R;
+import com.fitness.train.train.R;
+
 
 public class NutritionPlans extends AppCompatActivity {
 

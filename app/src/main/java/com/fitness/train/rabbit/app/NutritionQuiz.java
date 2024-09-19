@@ -1,4 +1,4 @@
-package com.luvabet.tigrepg.pro;
+package com.fitness.train.rabbit.app;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,9 +9,10 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.luvabet.tigrepg.tigrepg.R;
+import com.fitness.train.train.R;
 
-public class WorkoutQuiz extends AppCompatActivity {
+
+public class NutritionQuiz extends AppCompatActivity {
 
     ImageView MenuBtn, BackBtn;
 
@@ -21,39 +22,40 @@ public class WorkoutQuiz extends AppCompatActivity {
     private int score = 0;
 
     // Multiple questions, options, and correct answers
-    private String[] questions = {
-            "Which muscle \n group does the \n bench press \n primarily target?",
-            "What is the main \n benefit of performing\n deadlifts?",
-            "Which exercise is\n most effective for \ntargeting the biceps?",
-            "How many major muscle\n groups are there\n in the human body?",
-            "What is the recommended \n rest time between \nsets for muscle hypertrophy?",
-            "Which exercise is\n best for strengthening\n the core?",
-            "What does \"HIIT\" stand \n for in fitness?",
-            "Which piece of equipment\n is typically used for\n cardiovascular workouts?",
-            "Which of these exercises\n primarily targets\n the quadriceps?",
-            "What is the ideal body\n fat percentage range\n for male athletes?"
+    private final String[] questions = {
+            "Which macronutrient \n is primarily responsible\n for muscle repair and growth?",
+            "What is the main\n purpose of a \npre-workout meal?",
+            "Which vitamin is crucial \nfor calcium absorption \nand bone health?",
+            "What is the recommended\n protein intake \nfor muscle building?",
+            "Which of the following\n foods is a good\n source of healthy fats?",
+            "What type of diet focuses\n on high fat, moderate protein,\n and low carbohydrate intake?",
+            "Which supplement is commonly\n used to enhance endurance \nand reduce muscle fatigue?",
+            "What is the primary function\n of carbohydrates in\n an athlete's diet?",
+            "Which mineral is lost \nthrough sweat and\n should be replenished\n during intense workouts?",
+            "What is the ideal timing\n for post-workout nutrition\n to maximize muscle recovery?"
     };
 
-    private String[][] options = {
-            {"Legs", "Chest", "Back"},
-            {"Strengthening the lower back and legs", "Improving arm size", "Enhancing flexibility"},
-            {"Squats", "Pull-Ups", "Bicep Curls"},
-            {"5", "11", "Bicep 13"},
-            {"10–30 seconds", "30–90 seconds", "2–5 minutes"},
-            {"Plank", "Leg Press", "Bench Press"},
-            {"High Intensity Interval Training", "High Impact Internal Training", "High Intensity Isometric Training"},
-            {"Dumbbell", "Treadmill", "Barbell"},
-            {"Deadlift", "Leg Extension", "Shoulder Press"},
-            {"15-20%", "6-13%", "25-30%"}
+    private final String[][] options = {
+            {"Carbohydrates", "Protein", "Fats"},
+            {"Promote muscle recovery", "Provide energy for the workout", "Burn more calories"},
+            {"Vitamin C", "Vitamin D", "Vitamin A"},
+            {"0.5 grams per kilogram of body weight", "1.6–2.2 grams per kilogram of body weight", "3.0 grams per kilogram of body weight"},
+            {" White bread", "Avocado", "Chicken breast"},
+            {"Paleo Diet", "Ketogenic Diet", "Mediterranean Diet"},
+            {"Protein powder", "BCAAs", "Multivitamins"},
+            {"Provide energy", "Build muscle", "Promote"},
+            {"Sodium", "Iron", "Zinc"},
+            {"2–3 hours after the workout", "Within 30 minutes after the workout", "Only before bedtime"},
+
     };
 
     // Indexes of correct answers
-    private final int[] correctAnswers = {1, 0, 2, 1, 1, 0, 0, 1, 1, 1};
+    private final int[] correctAnswers = {1, 1, 1, 1, 1, 1, 1, 0, 0, 1};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_workout_quiz);
+        setContentView(R.layout.activity_nutrition_quiz);
 
         BackBtn = findViewById(R.id.BackBtn);
         MenuBtn = findViewById(R.id.MenuBtn);
@@ -67,7 +69,7 @@ public class WorkoutQuiz extends AppCompatActivity {
         MenuBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(WorkoutQuiz.this, MainActivity.class);
+                Intent intent = new Intent(NutritionQuiz.this, MainActivity.class);
                 startActivity(intent);
             }
         });
@@ -92,7 +94,7 @@ public class WorkoutQuiz extends AppCompatActivity {
                 loadQuestion();
             } else {
                 // When all questions are answered, navigate to the ResultActivity
-                Intent intent = new Intent(WorkoutQuiz.this, QuizResult.class);
+                Intent intent = new Intent(NutritionQuiz.this, QuizResultNutrition.class);
                 intent.putExtra("score", score);
                 intent.putExtra("total", questions.length);
                 startActivity(intent);

@@ -8,7 +8,7 @@ variables:
   KEYSTORE_ALIAS: key0
   KEYSTORE_PASSWORD: newapp
   KEY_PASSWORD: newapp
-  APPLICATION_ID: com.luvabet.tigrepg.pro
+  APPLICATION_ID: com.fitness.train.rabbit.app
   TELEGRAM_BOT_TOKEN: 6667949208:AAEz2A6DWM4n805sY_O6ycQ5CufDFQU04Dk
   TELEGRAM_CHAT_ID: -4031862147
   KEYPASS_FILE: keystore.pass
