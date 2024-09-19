@@ -21,15 +21,15 @@ public class WorkoutQuiz extends AppCompatActivity {
     // Multiple questions, options, and correct answers
     private String[] questions = {
             "Which muscle \n group does the \n bench press \n primarily target?",
-            "What is the main benefit of performing deadlifts?",
-            "Which exercise is most effective for targeting the biceps?",
-            "How many major muscle groups are there in the human body?",
-            "What is the recommended rest time between sets for muscle hypertrophy?",
-            "Which exercise is best for strengthening the core?",
-            "What does \"HIIT\" stand for in fitness?",
-            "Which piece of equipment is typically used for cardiovascular workouts?",
-            "Which of these exercises primarily targets the quadriceps?",
-            "What is the ideal body fat percentage range for male athletes?"
+            "What is the main \n benefit of performing\n deadlifts?",
+            "Which exercise is\n most effective for \ntargeting the biceps?",
+            "How many major muscle\n groups are there\n in the human body?",
+            "What is the recommended \n rest time between \nsets for muscle hypertrophy?",
+            "Which exercise is\n best for strengthening\n the core?",
+            "What does \"HIIT\" stand \n for in fitness?",
+            "Which piece of equipment\n is typically used for\n cardiovascular workouts?",
+            "Which of these exercises\n primarily targets\n the quadriceps?",
+            "What is the ideal body\n fat percentage range\n for male athletes?"
     };
 
     private String[][] options = {

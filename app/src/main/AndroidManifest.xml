@@ -16,6 +16,10 @@
             android:name=".QuizResult"
             android:exported="false" />
         <activity
+            android:name=".QuizResultNutrition"
+            android:exported="false" />
+
+        <activity
             android:name=".NutritionQuiz"
             android:exported="false" />
         <activity
